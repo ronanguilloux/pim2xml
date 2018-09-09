@@ -21,7 +21,7 @@ Sample GS1 `xsd` files come from [https://github.com/oliot-tsd](https://github.c
 - Hint: use the JMS metadata file generated in var/metadata and just add a mapping information per (PIM product attribute to PHP object's property)
 - get products data out of [Akeneo Rest API](https://api.akeneo.com/)
 - loop over the products, generate XMLTypes, add mapped values on the fly
-- generate final XML feed
+- serialize back into XML using JMS Serializer to get the final XML feed
 
 ## How it works
 
