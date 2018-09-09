@@ -11,20 +11,22 @@ Sample GS1 `xsd` files come from [https://github.com/oliot-tsd](https://github.c
 
 ### What's done
 
-- Create PHP classes out of XSD
+- create PHP classes out of XSD
 
 ### Next step (not yet): 
 
+- get families definitions out of [Akeneo Rest API](https://api.akeneo.com/)
+- create an empty mapping configuration file, ready for starting manual mapping
 - map [Akeneo PIM Product families](https://help.akeneo.com/articles/what-is-a-family.html) to XSD
-- then generate XML.
+- generate XML
 
 ## How it works
 
-* Conversions of XSD into PHP classes and JMS serializer definitions thanks to [goetas-webservices/xsd2php](https://github.com/goetas-webservices/xsd2php)
+- conversions of XSD into PHP classes and JMS serializer definitions thanks to [goetas-webservices/xsd2php](https://github.com/goetas-webservices/xsd2php)
 
 ## Usage
 
-First command available converts an XSD file into PHP classes and JMS serializer metadata filess
+First command available converts an XSD file into PHP classes and JMS serializer metadata files
 
 ```bash
 bin/console convert var/config/ProductData.yml var/xsd/ProductData.xsd
