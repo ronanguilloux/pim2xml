@@ -16,9 +16,8 @@ Sample GS1 `xsd` files come from [https://github.com/oliot-tsd](https://github.c
 ### Next step (not yet): 
 
 - get families definitions out of [Akeneo Rest API](https://api.akeneo.com/)
-- create an empty mapping configuration file, ready for starting manual mapping.
 - map [Akeneo PIM Product families](https://help.akeneo.com/articles/what-is-a-family.html) to XSD
-- Hint: use the JMS metadata file generated in var/metadata and just add a mapping information per (PIM product attribute to PHP object's property)
+- hint: use the JMS metadata file generated in var/metadata and just add a mapping information (PIM attribute code)
 - get products data out of [Akeneo Rest API](https://api.akeneo.com/)
 - loop over the products, generate XMLTypes, add mapped values on the fly
 - [serialize back into XML](https://github.com/goetas-webservices/xsd2php/blob/master/README.md#serialize--unserialize) using JMS Serializer to get the final XML feed
