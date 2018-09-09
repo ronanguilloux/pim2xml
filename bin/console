@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+// application.php
+
+require __DIR__.'/../vendor/autoload.php';
+
+use GoetasWebservices\Xsd\XsdToPhp\Command\Convert;
+use Symfony\Component\Console\Application;
+
+$container = new \Symfony\Component\DependencyInjection\ContainerBuilder();
+$container->registerExtension(new \GoetasWebservices\Xsd\XsdToPhp\DependencyInjection\Xsd2PhpExtension());
+
+$output = new \Symfony\Component\Console\Output\ConsoleOutput();
+$container->set('logger', new \Symfony\Component\Console\Logger\ConsoleLogger($output));
+error_reporting(error_reporting() & ~E_NOTICE);
+$cli = new Application('Convert XSD to PHP classes Command Line Interface', "2.0");
+$cli->setCatchExceptions(true);
+$cli->add(new Convert($container));
+$cli->run(null, $output);

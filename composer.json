@@ -1,0 +1,12 @@
+{
+    "require": {
+        "symfony/console": "^4.1",
+        "jms/serializer": "^1.13",
+        "goetas-webservices/xsd2php": "^0.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+                "Gs1\\": "src/Gs1"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+xsd2php:
+  namespaces:
+    'urn:gs1:tsd:product_data:xsd:1': 'Gs1\Product'
+    'urn:gs1:tsd:tsd_common:xsd:1': 'Gs1\Tsd'
+    'urn:gs1:shared:shared_common:xsd:3': 'Gs1\Common'
+  destinations_php:
+    'Gs1': src/Gs1
+  destinations_jms:
+    'Gs1': var/metadata/Gs1
+  naming_strategy: long # 'short' is optional and default
+  path_generator: psr4 # optional and default

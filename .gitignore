@@ -1,0 +1,4 @@
+composer.lock
+/src/Gs1
+/vendor
+/var/metadata
