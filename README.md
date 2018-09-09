@@ -18,6 +18,7 @@ Sample GS1 `xsd` files come from [https://github.com/oliot-tsd](https://github.c
 - get families definitions out of [Akeneo Rest API](https://api.akeneo.com/)
 - create an empty mapping configuration file, ready for starting manual mapping
 - map [Akeneo PIM Product families](https://help.akeneo.com/articles/what-is-a-family.html) to XSD
+- get products data out of [Akeneo Rest API](https://api.akeneo.com/)
 - generate XML
 
 ## How it works
